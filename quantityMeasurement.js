@@ -30,8 +30,7 @@
  let measureTo = readLine.question("\nMeasure To : ");
 
  let mTo = lenghtList[measureTo];
- let valuesArr = scale[valueIn];
- let val = valuesArr[mTo];
+ let val = scale?.[valueIn]?.[mTo];
 
  measureLength = (val, userInput) => {
     return val * userInput;
